@@ -34,7 +34,7 @@ fun SearchField(
         ),
         shape = RoundedCornerShape(6.dp),
         placeholder = {
-            Text(text = "Search")
+            Text(text = "Search", color = Color.Gray)
         },
         keyboardOptions = KeyboardOptions(
             keyboardType = KeyboardType.Text,

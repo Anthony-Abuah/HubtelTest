@@ -22,9 +22,9 @@ fun TransactionCard (
     customerName: String,
     personal: String,
     contactNumber: String,
+    amount: String,
     image: Int,
-    isSuccess: Boolean,
-
+    isSuccess: Boolean
 ){
     Card(modifier = Modifier,
         border = BorderStroke(1.dp, Color.Gray),
@@ -89,9 +89,9 @@ fun TransactionCard (
                             Spacer(modifier = Modifier.height(4.dp))
                             Box(modifier = Modifier, contentAlignment = Alignment.CenterEnd){
                                 BasicText(
-                                    text = "GHS 500",
+                                    text = amount,
                                     color = Color.Black,
-                                    fontSize = 16.sp,
+                                    fontSize = 20.sp,
                                     fontWeight = FontWeight.Bold
                                 )
                             }
@@ -102,9 +102,9 @@ fun TransactionCard (
                             Spacer(modifier = Modifier.height(4.dp))
                             Box(modifier = Modifier, contentAlignment = Alignment.CenterEnd){
                                 BasicText(
-                                    text = "GHS 500",
+                                    text = amount,
                                     color = Color.Black,
-                                    fontSize = 16.sp,
+                                    fontSize = 20.sp,
                                     fontWeight = FontWeight.Bold
                                 )
                             }

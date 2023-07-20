@@ -29,7 +29,7 @@ fun Successful(
         ) {
         BasicImage(image = R.drawable.success)
         Spacer(modifier = Modifier.width(2.dp))
-        BasicText(text = "Successful", color = Color.Green, fontSize = 12.sp, fontWeight = FontWeight.Normal)
+        BasicText(text = "Successful", color = SuccessfulGreen, fontSize = 12.sp, fontWeight = FontWeight.Normal)
     }
 }
 
@@ -45,6 +45,6 @@ fun Fail(
         ) {
         BasicImage(image = R.drawable.fail)
         Spacer(modifier = Modifier.width(2.dp))
-        BasicText(text = "Failed", color = Color.Red, fontSize = 12.sp, fontWeight = FontWeight.Normal)
+        BasicText(text = "Failed", color = FailureRed, fontSize = 12.sp, fontWeight = FontWeight.Normal)
     }
 }
