@@ -162,7 +162,7 @@ fun TransactionScreenContent(
         Row(modifier = Modifier.fillMaxWidth().padding(4.dp)) {
             Box(modifier = Modifier.weight(6f)) {
                 SearchField(
-                    value = "Search",
+                    value = searchValue,
                     onValueChange = { searchValue = it },
                     SearchFieldTextColor = Color.Black,
                     SearchFieldBackgroundColor = Color.LightGray
